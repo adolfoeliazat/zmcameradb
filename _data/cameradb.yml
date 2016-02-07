@@ -1,0 +1,13 @@
+- manufacturer: "Foscam"
+  model: "FI9830W"
+  url: "http://foo.com"
+  conntype: "FFMPEG"
+
+- manufacturer: "Panasonic"
+  model: "Fubar"
+  url: "http://moo.com"
+  conntype: "VLC"
+  ptz:
+    canMove: true
+    canZoom: true
+  

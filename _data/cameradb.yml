@@ -11,3 +11,10 @@
     canMove: true
     canZoom: true
   
+- manufacturer: "Axis"
+  model: "AX12"
+  url: "rtsp://1234.sdfsdf.sdfsdf"
+  conntype: HTTP
+  ptz:
+    canMove: false
+    canIris: true

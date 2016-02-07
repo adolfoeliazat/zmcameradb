@@ -22,7 +22,15 @@
 			<td class="model">{{ item.model }}</td>
 			<td class="conntype">{{ item.conntype }}</td>
 			<td class="url">{{ item.url }}</td>
-			<td>{% if item.ptz %} {{item.ptz}} {% else %} not defined {% endif %}</td>
+			<td>
+			  	{% if item.ptz %} 
+					<button data-toggle="collapse" data-target="#{{forloop.index}}-ptz">see</button>
+					<div id="{{forloop.index}}-ptz" class="collapse">
+					{{item.ptz}} 
+					</div>
+				{% else %} 
+					not defined 
+				{% endif %}</td>
 		</tr>
 	{% endfor %}
 	</tbody>

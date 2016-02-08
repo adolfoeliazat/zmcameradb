@@ -1,41 +1,57 @@
 - manufacturer: "Foscam"
   model: "FI9830W"
-  url: "http://foo.com"
-  conntype: "FFMPEG"
+  urls: 
+   - url: "http://foo.com"
+     note: 
+     conntype: "FFMPEG"
+   - url: "grrp://1"
+     note: 
+     conntype: "VLC"
 
 - manufacturer: "Panasonic"
   model: "Fubar"
-  url: "http://moo.com"
-  conntype: "VLC"
+  urls:
+   - url: "http://moo.com"
+     conntype: "VLC"
   ptz:
     canMove: true
     canZoom: true
   
 - manufacturer: "Axis"
   model: "AX12"
-  url: "rtsp://1234.sdfsdf.sdfsdf"
-  conntype: "HTTP"
+  urls:
+   - url: "rtsp://1234.sdfsdf.sdfsdf"
+     conntype: "HTTP"
   ptz:
     canMove: false
     canIris: true
 
 - manufacturer: "7links"
   model: "WAN IP Camera"
-  conntype: "HTTP"
-  url: "http://[user]:[pass]@[ip]:80/videostream.cgi"
+  urls:
+  - url: "http://[user]:[pass]@[ip]:80/videostream.cgi"
+    conntype: "HTTP"
 
 - manufacturer: "A-mtk"
   model: "A-mtk"
-  conntype: "FFMPEG"
-  url: "rtsp://[user]:[pass]@[ip]/media.amp?videocodec=[jpeg|h264|mjpeg]&resolution=[vga|sxga|qvga]"
+  urls:
+  - url: "rtsp://[user]:[pass]@[ip]/media.amp?videocodec=[jpeg|h264|mjpeg]&resolution=[vga|sxga|qvga]"
+    conntype: "FFMPEG"
 
 - manufacturer: "ABUS"
   model: TVIP11550
-  conntype: "FFMPEG"
-  url: "rtsp://[ip]:554/video.mp4"
+  urls:
+  - url: "rtsp://[ip]:554/video.mp4"
+    conntype: "FFMPEG"
 
 - manufacturer: "Airlive"
   model: "Aircam OD325HD"
-  conntype: "HTTP"
-  url: "http://[user]:[pass]@[ip]:80/mjpg/video.cgi?0.mjpg"
+  urls:
+  - url: "http://[user]:[pass]@[ip]:80/mjpg/video.cgi?0.mjpg"
+    conntype: "HTTP"
 
+- manufacturer: "Amovision"
+  model: "AM-Q630M"
+  urls:
+  - url: ["rtsp://[ip]:554/11","b"]
+    conntype: FFMPEG

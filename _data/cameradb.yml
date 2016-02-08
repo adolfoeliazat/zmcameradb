@@ -33,3 +33,9 @@
   model: TVIP11550
   conntype: "FFMPEG"
   url: "rtsp://[ip]:554/video.mp4"
+
+- manufacturer: "Airlive"
+  model: "Aircam OD325HD"
+  conntype: "HTTP"
+  url: "http://[user]:[pass]@[ip]:80/mjpg/video.cgi?0.mjpg"
+

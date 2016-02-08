@@ -14,7 +14,22 @@
 - manufacturer: "Axis"
   model: "AX12"
   url: "rtsp://1234.sdfsdf.sdfsdf"
-  conntype: HTTP
+  conntype: "HTTP"
   ptz:
     canMove: false
     canIris: true
+
+- manufacturer: "7links"
+  model: "WAN IP Camera"
+  conntype: "HTTP"
+  url: "http://[user]:[pass]@[ip]:80/videostream.cgi"
+
+- manufacturer: "A-mtk"
+  model: "A-mtk"
+  conntype: "FFMPEG"
+  url: "rtsp://[user]:[pass]@[ip]/media.amp?videocodec=[jpeg|h264|mjpeg]&resolution=[vga|sxga|qvga]"
+
+- manufacturer: "ABUS"
+  model: TVIP11550
+  conntype: "FFMPEG"
+  url: "rtsp://[ip]:554/video.mp4"

@@ -19,9 +19,9 @@
 		<tr>
 			<td class="manufacturer">{{ item.manufacturer }}</td>
 			<td class="model">{{ item.model }}</td>
-			<td class="url">
+			<td class="url" >
 				{% for url in item.urls %}
-					<b>{{url.conntype}}: </b>{{url.url}} {{url.note}}<br/>
+					<b>{{url.conntype}}: </b>{{url.url}} {% if url.note %} ({{url.note}}) {% endif %}<br/>
 				{% endfor %}
 			</td>
 			<td>

@@ -53,5 +53,12 @@
 - manufacturer: "Amovision"
   model: "AM-Q630M"
   urls:
-  - url: ["rtsp://[ip]:554/11","b"]
+  - url: "rtsp://[ip]:554/11"
+    note: "for main stream (1280x720)"
     conntype: FFMPEG
+  - url: "rtsp://[ip]:554/12"
+    conntype: FFMPEG
+    note: "for sub stream (640x360)"
+  - url: "rtsp://[ip]:554/13"
+    conntype: FFMPEG
+    note: "for mobile stream (320x180)"

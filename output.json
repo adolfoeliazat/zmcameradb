@@ -5,4 +5,4 @@ layout: null
 	{% for item in site.data.cameradb %}
 		{{item | jsonify}},
 	{% endfor %}
-]`
+]

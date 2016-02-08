@@ -62,3 +62,9 @@
   - url: "rtsp://[ip]:554/13"
     conntype: FFMPEG
     note: "for mobile stream (320x180)"
+
+- manufacturer: "Anran"
+  model: "VGB101-IP"
+  urls: 
+  - url: "rtsp://[ip]/user=[user]&password=[pass]_channel=1_stream=0.sdp?tcp"
+    conntype: FFMPEG
